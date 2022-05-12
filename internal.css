@@ -1,0 +1,32 @@
+@import url(reset);
+
+.s-wrapper{
+    display: flex;
+    height: 100vh;
+    flex-flow: row nowrap;
+}
+
+.s-wrapper .s-left-column{
+    width: 100px;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-wrapper .s-main-column{
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    padding-left: 30px;
+}
+
+.navigator{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
