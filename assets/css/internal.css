@@ -1,4 +1,5 @@
-@import url(reset);
+@import url(reset.css);
+@import url(global.css);
 
 .s-wrapper{
     display: flex;
