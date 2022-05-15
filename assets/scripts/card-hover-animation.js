@@ -1,3 +1,5 @@
+console.log("Devoleped by: https://github.com/GeracNeto")
+
 function handleMouseEnter(){
     this.classList.add('s-card--hovered');
     document.body.id = `${this.id}-hovered`;
