@@ -42,14 +42,27 @@ body::before{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    perspective: 3000px;
 }
 
 .s-card{
     border: 0.5rem solid white;
-    width: calc(100% / 3 - 8%);
+    width: 100%;
     height: 70vh;
-    position: relative;
+    position: absolute;
     transition: filter 0.5s ease-in-out;
+}
+
+.s-card:nth-child(1){
+    transform: rotate(0deg) translateZ(50vw);
+}
+
+.s-card:nth-child(2){
+    transform: rotate(120deg) translateZ(50vw);
+}
+
+.s-card:nth-child(3){
+    transform: rotate(240deg) translateZ(50vw);
 }
 
 .s-card__background{
@@ -80,11 +93,13 @@ body::before{
 }
 
 .s-controller{
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 2rem; /* Projeto original era 3rem, porém deixei com 2rem por questão estética apenas */
+    bottom: 1.5rem;
+    width: 100%;
 }
 
 .s-controller__button{
@@ -102,6 +117,13 @@ body::before{
     cursor: pointer;
     z-index: 1;
     transition: transform 0.3s ease-in-out;
+}
+
+.s-controller__button--active{
+    background-color: white;
+    color: red;
+    border: 0.1875rem solid var(--primary-color);
+    outline: 0.125rem solid white;
 }
 
 .s-controller__button:hover{
@@ -153,6 +175,13 @@ body[id^="spider-man-"] .s-card:not(.s-card--hovered){
 
 .s-card--hovered .s-card__title{
     bottom: 50%;
+}
+
+.s-card-carousel{
+    display: flex;
+    justify-content: center;
+    width:  calc(100vw / 3 - 10%);
+
 }
 
 
