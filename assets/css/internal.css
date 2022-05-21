@@ -37,35 +37,36 @@
 }
 
 .s-wrapper .s-main-content__top{
-    height: 80vh;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
 .s-wrapper .s-main-content__bottom{
-    height: 20vh;
+    height: 20%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;    
 }
 
 .s-wrapper .s-main-content .s-logo img{
-    margin-top: 50px;
+    margin-top: 10px;
     margin-left: 0;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .s-wrapper .s-main-content__top .s-description{
     background-color: rgba(0, 0, 0, 0.7);
-    max-width: 50%;
+    max-width: 85%;
+    max-height: 35%;
     padding: 20px;
     border-radius: 10px;
 }
 
 .s-wrapper .s-main-content__top .s-description .s-description__text p{
     color: white;
-    line-height: 170%;
+    line-height: 150%;
 }
 
 .s-wrapper .s-main-content__top .s-description .pills{
