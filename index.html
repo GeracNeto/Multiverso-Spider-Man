@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/home-page-style.css">
-    <script src="assets/scripts/card-hover-animation.js"></script>
+    <script src="assets/scripts/index-animation.js"></script>
     <title>Spider-Man | Multiversos</title>
 </head>
 <body>
@@ -30,7 +30,7 @@
     </nav>
     <div class="s-container">
         <div class="s-cards-carousel" style="transform: translateZ(-40vw) rotateY(0deg)">
-            <a href="#" class="s-card" id="spider-man-01">
+            <a href="pages/tobey-maguire/spiderman1.html" class="s-card" id="spider-man-01">
                 <img class="s-card__background" src="assets/images/pic-sm-bg-01.jpg">
                 <img class="s-card__image" src="assets/images/spider-man-01.png" alt="Tobey Maguire">
                 <h2 class="s-card__title">Tobey Maguire</h2>
@@ -49,13 +49,13 @@
     </div>
 
     <div class="s-controller">
-        <div class="s-controller__button s-controller__button--active">
+        <div id="1" onclick="selectCarouselItem(this)" class="s-controller__button s-controller__button--active">
             01
         </div>
-        <div class="s-controller__button">
+        <div id="2" onclick="selectCarouselItem(this)" class="s-controller__button">
             02
         </div>
-        <div class="s-controller__button">
+        <div id="3" onclick="selectCarouselItem(this)" class="s-controller__button">
             03
         </div>
         <div class="s-controller__line"></div>
